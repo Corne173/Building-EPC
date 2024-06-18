@@ -38,3 +38,15 @@ Feature Scaling: Normalize or standardize features to improve convergence during
 Train-validation-test split: Ensure you have a proper split of your data into training, validation, and test sets to evaluate the model's performance accurately.
 - 
 -[x] Completed 
+
+
+---
+## 18/06/2024
+Corne:
+
+Over fitting can be as a result of many things. 
+
+One of the first things you showed us was your pie chart. 
+![Pie chart](figs/pie_chart_classes.png)
+Start with the simple stuff, fix this first using suitable methods and then show us the before and after performance 
+of your model. 
