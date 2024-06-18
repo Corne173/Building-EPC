@@ -54,7 +54,9 @@ of your model. Make sure you know and understand why the model overfits when the
 
 Also, use your Jupyter notebook to tell the story of what you are doing. For example, after you load your dataset, 
 you want to explore the data. Perform an exploratory data analysis(EDA). The goal is to understand your data. 
-Why is it important? Because you need to be able to tell whether your models output makes sense or not.  
+Why is it important? Because it will give you an indication of what kind of model you need to use, and you need to be able to tell whether your models output makes sense or not.  
 The pie chart showing the output class distribution is only one of the elements. What other things should you look at?
 Ask ChatGPT but also read highly cited papers and see what how they conduct their research. Look on Kaggle for examples
 of EDA. 
+
+Once you understand your data, you preprocess it and then you move to training models. For every result that is displayed, tell us what you see and what you think it means. You are the expert now and all of us want to know more. 
