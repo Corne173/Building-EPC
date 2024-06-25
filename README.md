@@ -2,6 +2,7 @@
 
 ---
 
+The dataset used in this project can be found [here](https://analisi.transparenciacatalunya.cat/en/Energia/Certificats-d-efici-ncia-energ-tica-d-edificis/j6ii-t3w2/data_preview)
 
 This is where you ar going to track your progress and add your taks, 
 
@@ -60,3 +61,23 @@ Ask ChatGPT but also read highly cited papers and see what how they conduct thei
 of EDA. 
 
 Once you understand your data, you preprocess it and then you move to training models. For every result that is displayed, tell us what you see and what you think it means. You are the expert now and all of us want to know more. 
+
+
+## 24/06/2024
+
+Dumo:
+What youve done and where we can find it:
+-SMOTE is applied to balance the dataset by oversampling the minority classes.
+A pie chart is created to visualize the balanced distribution of the EPC labels after applying SMOTE.
+-Synthetic Minority Over-sampling Technique (SMOTE) is used to generate synthetic samples of the minority class to balance the dataset. This helps the model learn the decision boundaries for all classes effectively.
+#Why Class Imbalance Causes Issues:
+-Overfitting on Majority Class: The model may become biased towards the majority class because it sees more examples of it. This can lead to high accuracy but poor performance on minority classes.
+-Underfitting on Minority Class: The model may not learn the characteristics of the minority classes well because it sees fewer examples, leading to poor predictive performance for these classes.
+
+#Strategies to Balance the Dataset:
+Resampling Techniques:
+-Oversampling the Minority Class: This involves adding more copies of the minority class. Techniques include Random Oversampling and SMOTE (Synthetic Minority Over-sampling Technique).
+-Undersampling the Majority Class: This involves reducing the number of instances of the majority class. Techniques include Random Undersampling and Cluster-Based Undersampling.
+
+
+
