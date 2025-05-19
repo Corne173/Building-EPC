@@ -1,0 +1,70 @@
+Column Name,Description,API Field Name,Data Type
+NUM_CASE,Energy efficiency certificate procedure identifier,case_number,Text
+ADDRESS,Street name,address,Text
+NUMBER,Street number,number,Text
+SCALE,Scale,scale,Text
+APARTMENT,Apartment,floor,Text
+DOOR,Door,door,Text
+POSTAL_CODE,Postal code,postal_code,Text
+POPULATION,Municipality (according to the table of municipalities of Catalonia from Idescat),population,Text
+REGION,County (according to the table of counties of Catalonia and the singular territorial entity of Aran de l'Idescat),region,Text
+NAME_PROVINCE,Province,province_name,Text
+POPULATION_CODE,Municipality code (according to the Idescat table of municipalities in Catalonia),population_code,Text
+COUNTY_CODE,County code (according to the table of counties of Catalonia and of the singular territorial entity of Aran de l'Idescat),county_code,Text
+PROVINCE_CODE,Province code (according to the INE province table),province_code,Text
+CADASTRAL REFERENCE,Cadastral reference of the building,cadastral_reference,Text
+CLIMATIC ZONE,Climatic zone according to DB H1 of the Technical Building Code.,climate_zone,Text
+CADASTRE_METERS,Surface area (m2),cadastral_meters,Number
+YEAR_BUILT,Year of construction,year_of_construction,Text
+US_BUILDING,"Use of the building (housing, tertiary)",us_building,Text
+Non-renewable primary energy consumption rating,Non-renewable primary energy qualification letter (AG),consumer_qualification_d,Text
+Non-renewable primary energy,Non-renewable primary energy value [kWh/m2·year],non-renewable_primary_energy,Number
+Qualification of CO2 emissions,CO2 emissions rating letter (AG),emissions_rating,Text
+CO2 emissions,CO2 emissions value [kg CO2/m2·year],co2_emissions,Number
+Final energy consumption,Energy at the point of consumption equivalent to energy consumption [kWh/m2·year],final_energy_consumption,Number
+Approximate annual energy cost per home,Approximate annual energy cost per home,approximate_annual_energy_cost,Number
+ELECTRIC VEHICLE,Does it have an electric vehicle charging point (Yes/No),electric_vehicle,Text
+SOLAR THERMAL,It has a solar thermal installation (Yes/no),solar_thermal,Text
+SOLAR PHOTOVOLTAIC,Does it have a photovoltaic installation (Yes/No),solar_photovoltaic,Text
+BIOMASS SYSTEM,Does it have a biomass installation (Yes/No),biomass_system,Text
+DISTRICT NETWORK,It has a connection to a district heating and/or cooling network (Yes/No),district_network,Text
+GEOTHERMAL ENERGY,It has a geothermal installation (Yes/No),geothermal_energy,Text
+BUILDING_TECHNICAL_INSTALLATION_REPORT,Code of the certificate of suitability of the Technical Inspection of Residential Buildings (IITE),building_technical_institution_report,Text
+Certification tool,Tool used to make the certificate,certification_tool,Text
+INSULATION VALUE,Average facade transmittance [W/m2·K],insulation_value,Number
+WINDOWS VALUE,Average window transmittance [W/m2·K],window_value,Number
+Reason for certification,"Reason for certification (new construction, rental, purchase, etc.)",reason_for_certification,Text
+CTE INSULATION VALUE,Maximum facade transmittance according to CTE [W/m2·K],insulation_value_cte,Number
+CTE WINDOWS VALUE,Maximum transmittance of windows according to CTE [W/m2·K],value_windows_cte,Number
+UTM_X,UTM X coordinates,utm_x,Number
+UTM_Y,UTM Y coordinates,utm_y,Number
+Construction regulations,Construction regulations (CTE),construction_regulations,Text
+Procedure Type,"Type of procedure (new construction, existing)",procedure_type,Text
+TYPE_TERTIARY,"Type of tertiary (offices, catering, etc.)",tertiary_type,Text
+Heating emissions qualification,Qualification of CO2 emissions associated with the heating service (AG,emissions_rating,Text
+Heating emissions,CO2 emissions associated with heating service [kg CO2/m2·year],heating_emissions,Number
+Cooling emissions qualification,Qualification of CO2 emissions associated with the refrigeration service (AG),emissions_rating_1,Text
+Cooling emissions,CO2 emissions associated with the cooling service [kg CO2/m2·year],refrigeration_emissions,Number
+ACS emissions qualification,Qualification of CO2 emissions associated with the DHW service,acs_emissions_qualification,Text
+DHW emissions,CO2 emissions associated with DHW service [kg CO2/m2·year],emissions_acs,Number
+Lighting emissions qualification,Qualification of CO2 emissions associated with the lighting service (AG),emissions_rating_2,Text
+Lighting emissions,CO2 emissions associated with lighting service [kg CO2/m2·year],lighting_emissions,Number
+Heating energy qualification,Non-renewable primary energy consumption rating for heating service (AG),heating_energy_qualification,Text
+Heating energy,Non-renewable primary energy consumption for heating service [kWh/m2·year],heating_energy,Number
+Cooling energy qualification,Non-renewable primary energy consumption rating for the refrigeration service (AG),energy_qualification,Text
+Cooling energy,Non-renewable primary energy consumption for cooling service [kWh/m2·year],refrigeration_energy,Number
+DHW energy qualification,Qualification of non-renewable primary energy consumption for the domestic hot water service (AG,water_energy_qualification,Text
+DHW energy,Non-renewable primary energy consumption for DHW service [kWh/m2·year],water_energy,Number
+Lighting energy rating,Non-renewable primary energy consumption rating for lighting service (AG),energy_qualification_1,Text
+Lighting energy,Non-renewable primary energy consumption for lighting service [kWh/m2·year],lighting_energy,Number
+Heating energy demand qualification,Heating energy demand qualification (AG),qualificaci_energia_calefacci_1,Text
+Heating energy demand,Heating energy demand [kWh/m2·year],heating_energy_demand,Number
+Cooling energy demand qualification,Qualification of cooling energy demand (AG),energy_qualification_2,Text
+Cooling energy demand,Cooling energy demand [kWh/m2·year],cooling_energy_demand,Number
+RESIDENTIAL VENTILATION,Ventilation rate for residential use [ren/h],residential_ventilation,Number
+LENGTH,Longitude expressed in decimal degrees. WGS84 reference system,length,Number
+LATITUDE,Latitude expressed in decimal degrees. WGS84 reference system,latitude,Number
+GEOREFERENCE,Georeference column,georeference,Point
+ENERGY_REHABILITATION,An energy rehabilitation has been carried out [Yes/no],energy_rehabilitation,Text
+REHABILITATION_ACTIONS,Rehabilitation actions,rehabilitation_actions,Text
+ENTRY_DATE,Date of registration in the registry,entry_date,Floating timestamp
