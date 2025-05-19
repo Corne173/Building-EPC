@@ -1,92 +1,140 @@
-# Building-EPC
+# 🌍 Building-EPC
 
-This repository provides tools and resources for analyzing and predicting building energy performance certificates (EPCs), with a focus on the Barcelona dataset. It includes Python scripts, Jupyter notebooks, datasets, and figures to help users explore, model, and visualize EPC data.
+Tools and resources for analyzing **Building Energy Performance Certificates (EPCs)** — with a focus on the Barcelona dataset. The repo contains Python scripts, Jupyter notebooks, data files, and figures to let you explore, model, and visualise EPC data end-to-end.
 
-## Table of Contents
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
+[![Issues](https://img.shields.io/github/issues/Dumo1999/Building-EPC)](https://github.com/Dumo1999/Building-EPC/issues)
+
+---
+
+## 📑 Table of Contents
 - [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Installation](#installation)
+  - [First-time Git quick-start](#first-time-git-quick-start)
+  - [Cloning the repository](#1-clone-the-repository)
+  - [Opening in VS Code](#2-open-the-project-in-vs-code-recommended)
+  - [Installing dependencies](#3-install-required-packages)
 - [Usage](#usage)
-- [Updating and Uploading Changes](#updating-and-uploading-changes)
+- [Typical Git Workflow](#typical-git-workflow)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Structure
-```
-Barcelona_ANN_new.py           # Main Python script for ANN modeling
-Barcelona_ANN.ipynb            # Jupyter notebook for ANN analysis
-Masters_Code2.ipynb            # Additional Jupyter notebook
-CE3X_details.md                # Documentation on CE3X tool
-energy_efficiency_certificates.csv # Main dataset
-figs/                          # Folder with figures (e.g., pie charts)
-dataset_schema.csv             # Dataset schema/description
-README.md                      # Project documentation
-```
+---
 
-## Getting Started
+## 🗂️ Project Structure
+\`\`\`
+Barcelona_ANN_new.py            # Main Python script for ANN modelling
+Barcelona_ANN.ipynb             # Jupyter notebook for ANN analysis
+Masters_Code2.ipynb             # Additional notebook experiments
+CE3X_details.md                 # Notes on the CE3X EPC tool
+energy_efficiency_certificates.csv   # Main dataset
+dataset_schema.csv              # Column descriptions
+figs/                           # Pre-generated plots and charts
+README.md                       # You are here
+\`\`\`
 
-### 1. Clone the Repository
-To get the files on your computer, open a terminal (PowerShell on Windows) and run:
+---
 
-```powershell
-git clone https://https://github.com/Dumo1999/Building-EPC
-```
+## 🛠️ Prerequisites
+- **Python 3.9+**  
+- **Git** (any recent version)  
+- **VS Code** (optional but recommended) with  
+  - *Python* extension  
+  - *Jupyter* extension  
+  - *GitHub Copilot* or *ChatGPT Code Editor* for AI coding assistance  
 
-### 2. Navigate to the Project Directory
-```powershell
+> **Why VS Code?**  
+> It bundles Git integration, a first-class Jupyter experience, and lets you use Copilot/LLM extensions that autocomplete or explain code as you type.
+
+---
+
+## 🚀 Getting Started
+
+### First-time Git quick-start
+1. **Install Git**: download from <https://git-scm.com> and follow the defaults.  
+2. **Set your name & email** (one-off):  
+   \`\`\`bash
+   git config --global user.name  "Your Name"
+   git config --global user.email "you@example.com"
+   \`\`\`
+3. **Generate an SSH key** (optional but nicer than HTTPS passwords):  
+   \`\`\`bash
+   ssh-keygen -t ed25519 -C "you@example.com"
+   \`\`\`
+   Add the public key (\`~/.ssh/id_ed25519.pub\`) to *GitHub → Settings → SSH keys*.
+
+After that, every repo follows the same three-step loop: **clone → edit → commit & push**.
+
+---
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Dumo1999/Building-EPC.git
 cd Building-EPC
 ```
 
-### 3. Install Required Packages
-If there is a `requirements.txt` file, install dependencies with:
+### 2. Open the project in VS Code (recommended)
+```bash
+code .
+```
+- VS Code will detect the Python env and suggest installing extensions.  
+- If you’ve enabled GitHub Copilot or another LLM helper, you’ll get smart autocompletion and inline explanations as you work.
 
-```powershell
+### 3. Install required packages
+If a \`requirements.txt\` is present:
+```bash
 pip install -r requirements.txt
 ```
-If not, install common packages manually (e.g., numpy, pandas, scikit-learn, matplotlib, tensorflow, etc.):
-
-```powershell
-pip install numpy pandas scikit-learn matplotlib tensorflow
+Otherwise, install the common stack manually:
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn tensorflow shap
 ```
 
-## Usage
-- Open the Jupyter notebooks (`.ipynb`) in VS Code or JupyterLab to explore and run analyses.
-- Run the Python scripts (e.g., `Barcelona_ANN_new.py`) from the terminal:
+*(Tip: use a virtual environment — \`python -m venv .venv\` then \`source .venv/bin/activate\`)*
 
-```powershell
-python Barcelona_ANN_new.py
-```
+---
 
-- Review the figures in the `figs/` directory for visualizations.
+## 🎛️ Usage
 
-## Updating and Uploading Changes
+| Task                          | Command / Action                                   |
+|-------------------------------|----------------------------------------------------|
+| Run main script               | \`python Barcelona_ANN_new.py\`                      |
+| Open notebooks                | \`jupyter lab\` **or** VS Code Jupyter view          |
+| View figures                  | Browse \`figs/\` or load them in any image viewer    |
 
-### 1. Save Your Changes
-Make sure all your changes are saved locally.
+---
 
-### 2. Check the Status
-```powershell
+## 🔄 Typical Git Workflow
+> Repeat this loop each time you make edits.
+
+```bash
+# See what changed
 git status
+
+# Stage only the files you want
+git add path/to/file.py AnotherFile.ipynb
+
+# Commit with a clear message
+git commit -m "Fix: cleaner plotting function for ANN results"
+
+# Push to GitHub
+git push origin main   # or your feature branch
 ```
 
-### 3. Stage the Changes
-```powershell
-git add .
-```
+Need a refresher? GitHub has a great beginner guide:  
+<https://docs.github.com/en/get-started/quickstart>
 
-### 4. Commit the Changes
-```powershell
-git commit -m "Describe your changes here"
-```
+---
 
-### 5. Upload (Push) the Changes to GitHub
-```powershell
-git push origin main
-```
-Replace `main` with your branch name if different.
+## 🤝 Contributing
+Pull requests are welcome! For larger ideas, open an issue first so we can discuss direction and avoid duplicate work.
 
-## Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+---
 
-## License
-Specify your license here (e.g., MIT, GPL, etc.).
+## 📜 License
+Distributed under the **MIT License**. See [\`LICENSE\`](LICENSE) for details.
+
+---
+
