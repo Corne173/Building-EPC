@@ -1,62 +1,92 @@
-# Building EPC Progress
+# Building-EPC
 
----
+This repository provides tools and resources for analyzing and predicting building energy performance certificates (EPCs), with a focus on the Barcelona dataset. It includes Python scripts, Jupyter notebooks, datasets, and figures to help users explore, model, and visualize EPC data.
 
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Updating and Uploading Changes](#updating-and-uploading-changes)
+- [Contributing](#contributing)
+- [License](#license)
 
-This is where you ar going to track your progress and add your taks, 
+## Project Structure
+```
+Barcelona_ANN_new.py           # Main Python script for ANN modeling
+Barcelona_ANN.ipynb            # Jupyter notebook for ANN analysis
+Masters_Code2.ipynb            # Additional Jupyter notebook
+CE3X_details.md                # Documentation on CE3X tool
+energy_efficiency_certificates.csv # Main dataset
+figs/                          # Folder with figures (e.g., pie charts)
+dataset_schema.csv             # Dataset schema/description
+README.md                      # Project documentation
+```
 
+## Getting Started
 
--[ ] Uncompleted
-- analyse the results
-- what is the visual meaning of the data
-- what are the ranges of the variables
+### 1. Clone the Repository
+To get the files on your computer, open a terminal (PowerShell on Windows) and run:
 
-# Addressing overfitting and underfitting, Given the class imbalance in the EPC data
+```powershell
+git clone https://https://github.com/Dumo1999/Building-EPC
+```
 
-1. Data Augmentation and Resampling
-Over-sampling minority classes: Use techniques like SMOTE (Synthetic Minority Over-sampling Technique) to create synthetic examples of the minority classes.
-Under-sampling majority classes: Randomly under-sample the majority class to balance the dataset.
-Combination of over-sampling and under-sampling: Use a hybrid approach to balance the dataset.
-2. Regularization Techniques
-L1/L2 Regularization: Add regularization terms to the loss function to penalize large weights.
-Dropout: Randomly drop units (along with their connections) from the neural network during training to prevent co-adaptation of features.
-3. Cross-Validation
-K-Fold Cross-Validation: Use cross-validation to ensure the model generalizes well to unseen data and to prevent overfitting.
-Stratified K-Fold Cross-Validation: Use stratified k-fold cross-validation to ensure each fold has the same proportion of each class as the original dataset.
-4. Ensemble Methods
-Bagging (Bootstrap Aggregating): Train multiple models on different subsets of the data and average their predictions.
-Boosting: Combine weak learners into a strong learner by focusing on the errors made by previous models.
-5. Model Complexity
-Simplify the model: Use a less complex model to avoid overfitting.
-Hyperparameter tuning: Use grid search or random search to find the optimal hyperparameters for your model.
-6. Early Stopping
-Early Stopping: Monitor the model's performance on a validation set and stop training when performance starts to degrade.
-7. Feature Engineering
-Feature Selection: Remove irrelevant or redundant features to reduce the complexity of the model.
-Feature Scaling: Normalize or standardize features to improve convergence during training.
-8. Data Split
-Train-validation-test split: Ensure you have a proper split of your data into training, validation, and test sets to evaluate the model's performance accurately.
-- 
--[x] Completed 
+### 2. Navigate to the Project Directory
+```powershell
+cd Building-EPC
+```
 
+### 3. Install Required Packages
+If there is a `requirements.txt` file, install dependencies with:
 
----
-## 18/06/2024
-Corne:
+```powershell
+pip install -r requirements.txt
+```
+If not, install common packages manually (e.g., numpy, pandas, scikit-learn, matplotlib, tensorflow, etc.):
 
-Over fitting can be as a result of many things. 
+```powershell
+pip install numpy pandas scikit-learn matplotlib tensorflow
+```
 
-One of the first things you showed us was your pie chart. 
-![Pie chart](figs/pie_chart_classes.png)
+## Usage
+- Open the Jupyter notebooks (`.ipynb`) in VS Code or JupyterLab to explore and run analyses.
+- Run the Python scripts (e.g., `Barcelona_ANN_new.py`) from the terminal:
 
-Start with the simple stuff, fix this first using suitable methods and then show us the before and after performance 
-of your model. Make sure you know and understand why the model overfits when there is a class imbalance in your dataset and what option there exist to remedy it. 
+```powershell
+python Barcelona_ANN_new.py
+```
 
-Also, use your Jupyter notebook to tell the story of what you are doing. For example, after you load your dataset, 
-you want to explore the data. Perform an exploratory data analysis(EDA). The goal is to understand your data. 
-Why is it important? Because it will give you an indication of what kind of model you need to use, and you need to be able to tell whether your models output makes sense or not.  
-The pie chart showing the output class distribution is only one of the elements. What other things should you look at?
-Ask ChatGPT but also read highly cited papers and see what how they conduct their research. Look on Kaggle for examples
-of EDA. 
+- Review the figures in the `figs/` directory for visualizations.
 
-Once you understand your data, you preprocess it and then you move to training models. For every result that is displayed, tell us what you see and what you think it means. You are the expert now and all of us want to know more. 
+## Updating and Uploading Changes
+
+### 1. Save Your Changes
+Make sure all your changes are saved locally.
+
+### 2. Check the Status
+```powershell
+git status
+```
+
+### 3. Stage the Changes
+```powershell
+git add .
+```
+
+### 4. Commit the Changes
+```powershell
+git commit -m "Describe your changes here"
+```
+
+### 5. Upload (Push) the Changes to GitHub
+```powershell
+git push origin main
+```
+Replace `main` with your branch name if different.
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+Specify your license here (e.g., MIT, GPL, etc.).
