@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+.env/
+.venv/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Data and output files
+*.csv
+*.xlsx
+*.h5
+*.db
+*.sqlite3
+*.html
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Figures and output images
+figs/*.png
+figs/*.jpg
+figs/*.jpeg
+figs/*.svg
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Ignore all files in any folder ending with _files
+*_files/
+
