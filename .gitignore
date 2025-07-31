@@ -43,3 +43,4 @@ figs/*.svg
 # Ignore all files in any folder ending with _files
 *_files/
 
+/.idea
