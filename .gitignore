@@ -28,11 +28,6 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Figures and output images
-figs/*.png
-figs/*.jpg
-figs/*.jpeg
-figs/*.svg
 
 # Logs
 *.log
